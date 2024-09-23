@@ -23,7 +23,7 @@ roll.addEventListener("click", function () {
     const random = Math.floor(Math.random() * 6) + 1;
     img.src = `img/${random}.png`;
 
-    if (random !== 1) {
+    if (random !== 1,6) {
       current = current + random;
       document.querySelector(`.current-${activePlayer}`).textContent = current;
     } else {
